@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
       cart = session[:cart] || []
         if cart.empty?
          cart << params[:product] 
+         cart
       end
     end
 end
