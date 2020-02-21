@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   def cart 
       cart = session[:cart] || []
         if cart.empty?
-          add
+          
       end
     end
 end
